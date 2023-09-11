@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" href="../assets/images/01.png" />
+     <title>Virginia Latane's Portfolio</title>
+    <meta name="description" content="A place to explore Jennie's work.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+       
+        <span class="nav-title">Virginia Latane's Portfolio</span>
+        <a class="button" href="mailto:jmlatane@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+        <div class="main-title">UMW GIS Capstone</div>
+        <div class="body-text">Classifying landslides in Central Virginia</div>
+        <image class="project-header-image" src="../assets/images/Capstone_slide_1.png">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      
+      <div id="project-details">
+        <div class="subheader-text">Project Details</div>
+        <div class="project-details-content">
+          <div class="body-text">The Virginia Department of Energy maintains a database of landslide GIS features across the state. As a technician working for the Department's geology and mineral resources division, I spent many hours collecting these features by interpreting LiDAR-based DEMs, historical imagery and geologic maps.
+            By the summer of 2020, I had learned about image classifications in my remote sensing course at UMW and wondered if it could be applied to DEMs, specifically for the identification of historical landslide features.
+          </div>
+          <div class="body-text">The approach taken here did not yield the "easy button" I was looking for in landslide classification, but it was a good starting point for refining a process to automatically identify these features. There are several concrete next steps that
+            would improve classification accuracy. These days, I think the growing availability of AI would significantly change the process.
+          </div>
+          <div class="body-text">Read the full capstone document <a href="../assets/files/Classifying Landslides using Lidar-based DEMS.pdf" download="Classifying Landslides using Lidar-based DEMS">here</a>
+            or download my capstone presentation <a href="../assets/files/Classifying Landslides using Lidar-based DEMs_ppt.pptx" download="Classifying Landslides using Lidar-based DEMS presentation">here</a>.
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/study_area.png" class="gallery-image">
+              <span class="image-caption">The study area spanned the Sherando and Horseshoe Mountain quadrangles, both dense with historical landslide features thanks to Hurricane Camille.</span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/classifications.png" class="gallery-image">
+              <span class="image-caption">An idealized classification of the study area vs. my results. Black = landslide, white = no landslide</span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/logging_roads.png" class="gallery-image">
+              <span class="image-caption">Historical logging roads were often picked up as landslide features by the classification algorithm.</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      
+      <a class="icon-link" target="_blank" href="www.linkedin.com/in/virginia-latane">
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:jmlatane@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
